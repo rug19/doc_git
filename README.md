@@ -4,7 +4,10 @@ documentação do git para ajudar nos comandos
 
 git init: ele inicia o arquivo".git/" para controlar a pasta. 
 
-git status: Ele é responsavel por validar os arquivos modificados dentro do projeto.
+git status: 
+Ele é responsavel por validar os arquivos modificados dentro do projeto.
+Em vermelho ele mostra os arquivos modificados. 
+Em verde mostra os arquivos que foram adicionado pelo "git add"
 
 git add: Ele é responsavel por colocar o arquivo modificado em uma area segura. 
 
