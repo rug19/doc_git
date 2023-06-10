@@ -1,4 +1,5 @@
-# doc_git
+# Documentação git
+
 documentação do git para ajudar nos comandos
 
 git init: ele inicia o arquivo".git/" para controlar a pasta. 
