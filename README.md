@@ -2,9 +2,10 @@
 
 documentação do git para ajudar nos comandos
 
-git init: ele inicia o arquivo".git/" para controlar a pasta. 
+git init: ele inicia o arquivo (repositorio)".git/" para controlar a pasta. 
 
 git status: 
+Verifica o status de todos os arquivos dentro do repositorio.
 Ele é responsavel por validar os arquivos modificados dentro do projeto.
 Em vermelho ele mostra os arquivos modificados. 
 Em verde mostra os arquivos que foram adicionado pelo "git add"
@@ -12,6 +13,8 @@ Em verde mostra os arquivos que foram adicionado pelo "git add"
 git add: Ele é responsavel por colocar o arquivo modificado em uma area segura. 
 
 git commit -m "<texto_da_modificação>": Ele é responsavel por criar uma nova versão do projeto com as referências do criador.
+
+git nano: Ele é um editor de texto para terminl. 
 
 Configurações do usuário do git:
 
