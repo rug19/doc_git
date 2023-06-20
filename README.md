@@ -61,5 +61,6 @@ git pull
 ````
 git config --global user.name "seu_nome"
 ````
+````
 git config --global user.email "seu_email"
 ````
