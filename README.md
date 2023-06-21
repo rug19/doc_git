@@ -69,6 +69,15 @@ git push
 ````
 git pull
 ````
+## Ele envia o repositorio local para o repositorio online do github.
+````
+git remote add origin "url" do repositório
+````
+## Ele cria um novo repositório caso não tenha nenhum criado
+````
+echo "#nome_do_repositorio" >> README.md
+````
+
 ## Ele lista os arquivos que possuem dentro do diretório:
 ````
 ls
