@@ -16,7 +16,26 @@ Sendo assim, a imagem abaixo ilustra como funciona todo este processo:
 
 ![imagem git](https://github.com/rug19/doc_git/assets/67665127/9d345c03-ab05-4305-9d88-0917bd47ba32)
 
+## Utilizando HTTPS para comunicação
+O protocolo HTTPS é o mais fácil e prático para ser utilizado no Github. Para isso, não há a necessidade de nenhuma configuração adicional. Apenas com o link do repositório é possível realizar esta comunicação, desde que você possua permissão de acesso ao repositório.
+## Utilizando SSH para comunicação.
+O processo de comunicação com o Github utilizando o SSH é mais complexo que utilizando HTTPS. Para isso, precisamos gerar as chaves SSH e adicioná-las ao nosso perfil do Github. Sendo assim, vamos ao passo-a-passo:
 
+1 - Para gerar uma nova chave SSH, o primeiro passo é, no terminal (ou Git Bash) utilizar o seguinte comando: ssh-keygen -t rsa -b 4096 -C "your_email@example.com", onde você deve substituir o email e adicionar o utilizado no github.
+2 - Após isso, será perguntado onde você deseja salvar a chave SSH. Neste ponto, pode clicar em "enter", o destino padrão já é suficiente.
+3 - Feito isso, será solicitado uma chave secreta. Esta chave é utilizada em conjunto com o hash para gerar sua chave SSH. Pode adicionar qualquer frase (desde que você se lembre, haha).
+4 - Com isso, sua chave foi gerada. O próximo passo é adicioná-la ao nosso perfil do github.
+Agora, com as chaves SSH geradas, vamos adicioná-la ao github. Para isso, vamos ao passo-a-passo:
+
+1 - Ao realizar o login, vamos até a seguinte rota: https://github.com/settings/keys Na página, clicamos em "NEW SSH KEY".
+2 - Agora, voltando ao terminal, precisamos copiar nossa chave gerada anteriormente.
+3 - Caso você utilize o macOS, no terminal (ou git bash), digitamos o seguinte comando: pbcopy < ~/.ssh/id_rsa.pub.
+4 - Caso você utilize o Windows, no gitbash, digitamos o seguinte comando: clip < ~/.ssh/id_rsa.pub.
+5 - Caso você utilize o Linux, no terminal, digitamos os seguintes comandos: sudo apt-get install xclip e xclip -sel clip < ~/.ssh/id_rsa.pub.
+6 - Feito isso, a chave ssh estará em nossa área de transferência. Agora, voltamos à página aberta do Github (https://github.com/settings/keys ) e colamos a chave, conforme a imagem abaixo:
+
+Feito isso, já podemos salvar e a chave já está configurada.
+O último passo é testar a comunicação. Para isso, no terminal (ou gitbash), utilizamos o seguinte comando: ssh -T git@github.com. Será solicitado que digitemos, então, a chave secreta que utilizamos ao criar a chave ssh no processo anterior. Ao fazer isso, a comunicação será feita com sucesso e nossa chave estará configurada:
 ## Ele inicia o arquivo (repositorio)".git/" para controlar a pasta:
 ````
 git init
@@ -74,6 +93,7 @@ git pull
 git remote add origin "url" do repositório
 ````
 ## É utilizado quando queremos enviar a branch que criamos para o repositório remoto. Isso criará um “elo” entre o seu repositório local e o repositório remoto.
+git push -u origin "branch"
 ## Ele cria um novo repositório caso não tenha nenhum criado
 ````
 echo "#nome_do_repositorio" >> README.md
