@@ -34,8 +34,13 @@ Agora, com as chaves SSH geradas, vamos adicioná-la ao github. Para isso, vamos
 5 - Caso você utilize o Linux, no terminal, digitamos os seguintes comandos: sudo apt-get install xclip e xclip -sel clip < ~/.ssh/id_rsa.pub.
 6 - Feito isso, a chave ssh estará em nossa área de transferência. Agora, voltamos à página aberta do Github (https://github.com/settings/keys ) e colamos a chave, conforme a imagem abaixo:
 
+![imagem git](https://d2v0x26thbzlwf.cloudfront.net/prod/527/img/rId15uih22wf4.enz.png)
+
 Feito isso, já podemos salvar e a chave já está configurada.
 O último passo é testar a comunicação. Para isso, no terminal (ou gitbash), utilizamos o seguinte comando: ssh -T git@github.com. Será solicitado que digitemos, então, a chave secreta que utilizamos ao criar a chave ssh no processo anterior. Ao fazer isso, a comunicação será feita com sucesso e nossa chave estará configurada:
+
+![imagem git](https://d2v0x26thbzlwf.cloudfront.net/prod/527/img/rId17jbhg53xl.ocz.png)
+
 ## Ele inicia o arquivo (repositorio)".git/" para controlar a pasta:
 ````
 git init
