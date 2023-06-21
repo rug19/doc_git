@@ -61,7 +61,7 @@ git merge: <nome_de_branch>
 ````
 git clone: <url>
 ````
-## Ele envia alteração para o repositorio:
+## Ele envia as alterações para o repositorio:
 ````
 git push
 ````
@@ -69,10 +69,11 @@ git push
 ````
 git pull
 ````
-## Ele envia o repositorio local para o repositorio online do github.
+## Ele envia o repositorio local para o repositorio online do github. Este comado é quando você precisa fazer a ligação com o repositório online do github. 
 ````
 git remote add origin "url" do repositório
 ````
+## É utilizado quando queremos enviar a branch que criamos para o repositório remoto. Isso criará um “elo” entre o seu repositório local e o repositório remoto.
 ## Ele cria um novo repositório caso não tenha nenhum criado
 ````
 echo "#nome_do_repositorio" >> README.md
