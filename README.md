@@ -85,6 +85,10 @@ git merge: <nome_de_branch>
 ````
 git clone: <url>
 ````
+## Baixa o projeto do repositório de uma branch especifica.
+````
+git clone -b <nome_da_branch> <url_do_repositório>
+````
 ## Ele envia as alterações para o repositorio:
 ````
 git push
