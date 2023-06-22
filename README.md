@@ -98,12 +98,17 @@ git pull
 git remote add origin "url" do repositório
 ````
 ## É utilizado quando queremos enviar a branch que criamos para o repositório remoto. Isso criará um “elo” entre o seu repositório local e o repositório remoto.
-git push -u origin "branch"
+````
+git push origin "branch"
+````
+## Abri um repositório clonado diretamente no visual code através do terminal.
+````
+code <caminho-do-repositório>
+````
 ## Ele cria um novo repositório caso não tenha nenhum criado
 ````
 echo "#nome_do_repositorio" >> README.md
 ````
-
 ## Ele lista os arquivos que possuem dentro do diretório:
 ````
 ls
@@ -133,8 +138,13 @@ nano "index.html"
 ````
 ## Possiveis erros: 
 
-403: Apagando as credenciais, gerenciamento de credenciais.
+  Erro 403: Ir em gerenciador de crendeciais > crendeciais do windows > apagar as crendenciais do github. 
+  
+  Erro: failed to push some refs to <repositório>. Esse ocore quando querendo enviar diretamenteas alterações para a branch principal maim.
+  
+![WhatsApp Image 2023-06-22 at 08 44 08](https://github.com/rug19/doc_git/assets/67665127/a61b9d38-782d-4ac8-9f56-e1ce8d67e147)
 
+Para enviar o commit diretamente para a branch principal "main" é necessário primeiro da um git pull para puxar os arquivos do repositório remoto para depois da um git push para enviar juntamente com o arquivo adicionado. 
 
 ## Configurações do usuário do git:
 Para que os commits feitos possuam nosso nome e e-mail em seu escopo, precisamos realizar esta configuração.
