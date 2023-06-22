@@ -122,16 +122,6 @@ ls -l
 git revert + identificador do commit
 
 ````
-Possiveis erros no git revert:
-
-$ git revert 383177df7e94c78a32626b2712ade2aff66b6c02
-CONFLICT (modify/delete): cadastro.html deleted in parent of 383177d (adicionand
-o o arquivo cadastro.html) and modified in HEAD.  Version HEAD of cadastro.html
-left in tree. 
-error: could not revert 383177d... adicionando o arquivo cadastro.html
-
-A idéia do revert é desfazer alterações feitas no commit em questão e voltar para a versão anterior, porém provavelmente nesse caso tem outro commit que modificava esse arquivo, o que impedia o git de voltar ao commit inicial. Nesses casos o git acusa que há conflitos e trava o revert, assim é necessário que você abra o arquivo que tem conflito e verifique qual das alterações deseja aplicar. é preciso entrar no arquivo e arrumar os conflitos utilizar o git add para adiconar o arquivo e utilizar o git revert --continue para continuar o processo. 
-
 ## Ele é um editor de texto para terminal e consegue adicionar um arquivo um aquivo dentro do repositório.
 ````
 nano "index.html"
@@ -145,6 +135,12 @@ nano "index.html"
 ![WhatsApp Image 2023-06-22 at 08 44 08](https://github.com/rug19/doc_git/assets/67665127/a61b9d38-782d-4ac8-9f56-e1ce8d67e147)
 
 Para enviar o commit diretamente para a branch principal "main" é necessário primeiro da um git pull para puxar os arquivos do repositório remoto para depois da um git push para enviar juntamente com o arquivo adicionado. 
+
+error: could not revert 383177d... adicionando o arquivo cadastro.html
+CONFLICT (modify/delete): cadastro.html deleted in parent of 383177d (adicionand
+o o arquivo cadastro.html) and modified in HEAD.  Version HEAD of cadastro.html
+left in tree. 
+A idéia do revert é desfazer alterações feitas no commit em questão e voltar para a versão anterior, porém provavelmente nesse caso tem outro commit que modificava esse arquivo, o que impedia o git de voltar ao commit inicial. Nesses casos o git acusa que há conflitos e trava o revert, assim é necessário que você abra o arquivo que tem conflito e verifique qual das alterações deseja aplicar. é preciso entrar no arquivo e arrumar os conflitos utilizar o git add para adiconar o arquivo e utilizar o git revert --continue para continuar o processo.
 
 ## Configurações do usuário do git:
 Para que os commits feitos possuam nosso nome e e-mail em seu escopo, precisamos realizar esta configuração.
