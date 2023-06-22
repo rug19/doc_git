@@ -128,15 +128,16 @@ nano "index.html"
 ````
 ## Possiveis erros: 
 
-  Erro 403: Ir em gerenciador de crendeciais > crendeciais do windows > apagar as crendenciais do github. 
+- Erro 403: Ir em gerenciador de crendeciais > crendeciais do windows > apagar as crendenciais do github. 
   
-  Erro: failed to push some refs to <repositório>. Esse ocore quando querendo enviar diretamenteas alterações para a branch principal maim.
+- Erro: failed to push some refs to <repositório>. Esse ocore quando querendo enviar diretamenteas alterações para a branch principal maim.
   
 ![WhatsApp Image 2023-06-22 at 08 44 08](https://github.com/rug19/doc_git/assets/67665127/a61b9d38-782d-4ac8-9f56-e1ce8d67e147)
 
 Para enviar o commit diretamente para a branch principal "main" é necessário primeiro da um git pull para puxar os arquivos do repositório remoto para depois da um git push para enviar juntamente com o arquivo adicionado. 
 
-error: could not revert 383177d... adicionando o arquivo cadastro.html
+- Error: could not revert 383177d... adicionando o arquivo cadastro.html
+
 CONFLICT (modify/delete): cadastro.html deleted in parent of 383177d (adicionand
 o o arquivo cadastro.html) and modified in HEAD.  Version HEAD of cadastro.html
 left in tree. 
