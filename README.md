@@ -130,6 +130,10 @@ git revert + identificador do commit
 ````
 nano "index.html"
 ````
+## Baixa o conteúdo remoto e não altera o estado do repositóri local. 
+````
+git fetch
+````
 ## Possiveis erros: 
 
 - Erro 403: Ir em gerenciador de crendeciais > crendeciais do windows > apagar as crendenciais do github. 
