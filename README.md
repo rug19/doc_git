@@ -107,7 +107,7 @@ git push origin "branch"
 ````
 ## Abri um repositório clonado diretamente no visual code através do terminal.
 ````
-code <caminho-do-repositório>
+code . <caminho-do-repositório>
 ````
 ## Ele cria um novo repositório caso não tenha nenhum criado
 ````
