@@ -61,10 +61,6 @@ git add .
 ````
 git commit -m "texto_da_modificação"
 ````
-## Ele é responsavel por criar uma nova versão do projeto com as referências do criador:
-````
-git commit -m "texto_da_modificação"
-````
 ## validar os meus comentários e modificações:
 ````
 git log
@@ -95,7 +91,11 @@ git push
 ````
 ## Ele puxa as alterações do repositorio:
 ````
-git pull
+git pull 
+````
+## Ele puxa as alterações de um repositorio especifico.
+````
+git pull origin <branch>
 ````
 ## Ele envia o repositorio local para o repositorio online do github. Este comado é quando você precisa fazer a ligação com o repositório online do github. 
 ````
@@ -140,7 +140,14 @@ cd <nomw_diretório>
 ````
 ## Possiveis erros: 
 
-- Erro 403: Ir em gerenciador de crendeciais > crendeciais do windows > apagar as crendenciais do github. 
+- Erro 403: Ir em gerenciador de crendeciais > crendeciais do windows > apagar as crendenciais do github.
+- fatal: refusing to merge unrelated histories.
+O erro fatal: refusing to merge unrelated histories geralmente acontece quando você tenta fazer o git pull de um repositório remoto, mas o seu repositório local possuí um histórico de commits, branches, etc, diferente do que está no repositório remoto.
+Para permitir que o Git faça o merge de dois projetos com históricos diferentes, é só passar o parâmetro --allow-unrelated-histories quando for fazer o pull, assim:
+
+git pull origin master --allow-unrelated-histories
+
+(lembre-se de trocar os nomes do remote e branch para os que você utiliza)  
   
 - Erro: failed to push some refs to <repositório>. Esse ocore quando querendo enviar diretamenteas alterações para a branch principal maim.
   
