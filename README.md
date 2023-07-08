@@ -138,6 +138,10 @@ git fetch
 ````
 cd <nomw_diretório>
 ````
+## Apagar uma branch:
+````
+git branch -d <branch>
+````
 ## Possiveis erros: 
 
 - Erro 403: Ir em gerenciador de crendeciais > crendeciais do windows > apagar as crendenciais do github.
