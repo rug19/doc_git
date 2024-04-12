@@ -6,6 +6,7 @@ Basicamente, um repositório é um local de armazenamento do nosso código-fonte
 Com o GIT, existem dois tipos de repositórios:
 
 Local: Um repositório onde os códigos são armazenados e versionados localmente, sem a necessidade de um serviço externo;
+
 Remoto: Um repositório onde os códigos são armazenados e versionados remotamente, utilizando serviços como Github, Bitbucket ou Gitlab (que serão vistos posteriormente).
 ## Estados de um arquivo
 Um arquivo gerenciado pelo git possui três estados e o entendimento destes são fundamentais. Basicamente, os estados são:
